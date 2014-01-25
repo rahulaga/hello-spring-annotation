@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.irahul.hellospringannotation.HelloWorldSpring;
 
 /**
- * Load bean from XML context file manually
+ * Load beans by creating context from XML
  * @author rahul
  *
  */
@@ -17,7 +17,7 @@ public class TestHelloWorldSpring {
 	@SuppressWarnings("resource")
 	@Test
 	public void testHelloWorldBeans(){
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans-annotation.xml");
  
 		HelloWorldSpring obj = (HelloWorldSpring) context.getBean("helloWorldSpring");		
 		

@@ -10,14 +10,17 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
+import com.irahul.hellospring.Greeter;
+
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class) 
 public class TestHelloWorldSpringNoXml extends AbstractJUnit4SpringContextTests {
 	
 	@Configuration
-	@ComponentScan(basePackages={"com.irahul"})
-	static class AppConfig {}
+	@ComponentScan(basePackages={"com.irahul.hellospringannotation"})
+	static class TestAppConfig {}
 	
 	@Autowired
+	@Qualifier(value="helloWorldSpring")
 	private HelloWorldSpring hws;
 	
 	@Autowired

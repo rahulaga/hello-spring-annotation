@@ -2,7 +2,7 @@ package com.irahul.hellospringannotation.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.irahul.hellospringannotation.Greeter;
+import com.irahul.hellospring.Greeter;
 
 /**
  * Knows English

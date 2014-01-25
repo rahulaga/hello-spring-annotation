@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-import com.irahul.hellospringannotation.Greeter;
-import com.irahul.hellospringannotation.HelloWorldSpring;
+import com.irahul.hellospring.Greeter;
 
-@ContextConfiguration(locations = { "classpath:spring-beans.xml" })
+@ContextConfiguration(locations = { "classpath:spring-beans-annotation.xml" })
 public class TestHelloWorldSpringIntegrationCustomBean extends AbstractJUnit4SpringContextTests {
 	
 	@Autowired
+	@Qualifier(value="helloWorldSpring")
 	private HelloWorldSpring hws;
 	
 	@Autowired

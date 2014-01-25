@@ -2,7 +2,7 @@ package com.irahul.hellospringannotation;
 
 import org.springframework.stereotype.Component;
 
-import com.irahul.hellospringannotation.Greeter;
+import com.irahul.hellospring.Greeter;
 
 /**
  * A test greeter. Using a mock is also an option (like EasyMock)
