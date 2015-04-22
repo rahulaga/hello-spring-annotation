@@ -17,10 +17,14 @@ public class HelloWorldSpring {
 	@Qualifier("hindiGreeter")
 	private Greeter greeter;
 	
+	@Autowired
+	@Qualifier("englishGreeter")
+	private Greeter englishGreeter;
+	
 	public void setGreeter(Greeter greeter) {
 		this.greeter = greeter;
 	}
-
+	
 	public String execute(){
 		return greeter.sayHello();
 	}
