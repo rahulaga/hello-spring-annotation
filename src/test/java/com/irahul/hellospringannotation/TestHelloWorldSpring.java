@@ -17,7 +17,8 @@ public class TestHelloWorldSpring {
 	@SuppressWarnings("resource")
 	@Test
 	public void testHelloWorldBeans(){
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans-annotation.xml");
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("spring-beans-annotation.xml");
  
 		HelloWorldSpring obj = (HelloWorldSpring) context.getBean("helloWorldSpring");		
 		
