@@ -3,7 +3,7 @@ package com.irahul.hellospringannotation.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.irahul.hellospring.Greeter;
+import com.irahul.hellospringannotation.Greeter;
 import com.irahul.hellospringannotation.HelloWorldSpring;
 import com.irahul.hellospringannotation.impl.EnglishGreeter;
 import com.irahul.hellospringannotation.impl.HindiGreeter;

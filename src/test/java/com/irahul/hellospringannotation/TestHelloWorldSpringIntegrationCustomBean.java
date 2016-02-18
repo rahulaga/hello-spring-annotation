@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-import com.irahul.hellospring.Greeter;
-
 @ContextConfiguration(locations = { "classpath:spring-beans-annotation.xml" })
 public class TestHelloWorldSpringIntegrationCustomBean extends AbstractJUnit4SpringContextTests {
 	
