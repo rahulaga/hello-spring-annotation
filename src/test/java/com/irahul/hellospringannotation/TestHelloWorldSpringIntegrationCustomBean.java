@@ -21,10 +21,11 @@ public class TestHelloWorldSpringIntegrationCustomBean extends AbstractJUnit4Spr
 	@Test
 	public void testGreeterHelloWorld(){
 		System.out.println("Original message:"+hws.execute());
+		Assert.assertEquals("Namaste", hws.execute());
+		
 		hws.setGreeter(greeter);
 		
 		System.out.println(greeter.sayHello());
-		
 		Assert.assertEquals("Did you test?", hws.execute());
 	}
 }
