@@ -15,7 +15,7 @@ public class TestHelloWorldSpringNoXml extends AbstractJUnit4SpringContextTests 
 	
 	@Configuration
 	@ComponentScan(basePackages={"com.irahul.hellospringannotation"})
-	static class TestAppConfig {}
+	static class MyAppConfig {}
 	
 	@Autowired
 	@Qualifier(value="helloWorldSpring")
